@@ -25,7 +25,7 @@ setInterval(function () {
 			.data('owner', owner.toLowerCase())
 			.addClass('hacked');
 
-		executeSearch();
+		$('[name="search"]').trigger('change');
 	});
 }, 500);
 
